@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+// 자주 쓰이는 메서드 
 public class RequestInfo {
     @RequestMapping("/requestInfo")
     public void main(HttpServletRequest request) {
