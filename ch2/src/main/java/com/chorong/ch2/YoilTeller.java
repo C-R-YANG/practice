@@ -36,9 +36,16 @@ public class YoilTeller {
 		// 3. 출력
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
-		PrintWriter out = response.getWriter(); // response에서 브라우저로의 출력 스트림을 얻는다.
+		PrintWriter out = response.getWriter(); // response에서 브라우저로의 출력 스트림을 얻는다.	
+		out.println("<html>");
+		out.println("<head>");
+		out.println("</head>");
+		out.println("<body>");
 		out.println(year + "년" + month + "월" + day + "일은");
 		out.println(yoil + "요일입니다.");
+		out.println("</body>");
+		out.println("</html>");
+		out.close();
 	}
 
 }

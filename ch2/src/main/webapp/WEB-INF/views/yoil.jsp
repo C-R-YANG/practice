@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <html>
@@ -6,8 +7,7 @@
 </head>
 <body>
 <h1>
-	Hello world!
+${year}년 ${month}월 ${day}일은 ${yoil}요일입니다.
 </h1>
-<P> The time on the server is ${serverTime}. </P>
 </body>
 </html>
