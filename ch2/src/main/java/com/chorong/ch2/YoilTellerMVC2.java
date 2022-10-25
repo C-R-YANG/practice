@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 // 년월일을 입력하면 요일을 알려주는 프로그램 
 @Controller
-public class YoilTellerMVC { // http://localhost:8080/ch2/getYoilMVC?year=2021&month=10&day=1
+public class YoilTellerMVC2 { // http://localhost:8080/ch2/getYoilMVC?year=2021&month=10&day=1
 	@ExceptionHandler(Exception.class)
 	public String catcher(Exception ex) {
 		ex.printStackTrace();
 		return "yoilError";
 	}
 	// public static void main(String[] args) {
-		@RequestMapping("/getYoilMVC")
+		@RequestMapping("/getYoilMVC2")
 //		public void main(HttpServletRequest request, HttpServletResponse response) throws IOException{
 		public String main(@RequestParam(required=true) int year, 
 				@RequestParam(required=true) int month, 
