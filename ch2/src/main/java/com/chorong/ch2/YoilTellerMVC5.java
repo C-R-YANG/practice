@@ -6,42 +6,43 @@ import java.util.Calendar;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 // 년월일을 입력하면 요일을 알려주는 프로그램 
 @Controller
-public class YoilTellerMVC4 { // http://localhost:8080/ch2/getYoilMVC?year=2021&month=10&day=1
+public class YoilTellerMVC5 { // http://localhost:8080/ch2/getYoilMVC?year=2021&month=10&day=1
 	@ExceptionHandler(Exception.class)
 	public String catcher(Exception ex) {
 		ex.printStackTrace();
 		return "yoilError";
 	}
 	// public static void main(String[] args) {
-		@RequestMapping("/getYoilMVC4")
-//		public void main(HttpServletRequest request, HttpServletResponse response) throws IOException{
-		public String main(Mydate date, Model model) throws IOException{
+		@RequestMapping("/getYoilMVC5")
+//		public String main(@ModelAttribute("myDate") Mydate date, Model model) throws IOException{
+		public String main(@ModelAttribute Mydate date, Model model) throws IOException{
 
 			// 1. 유효성 검사
 			if(!isVaild(date))
 				return "yoilError";
 		
 			// 2. 요일 계산
-			char yoil = getYoil(date);
+//			char yoil = getYoil(date);
 		
 			// 3. 계산한 결과를 모델에 저장
-			model.addAttribute("myDate", date);
-			model.addAttribute("yoil", yoil);
+//			model.addAttribute("myDate", date);
+//			model.addAttribute("yoil", yoil);
 			
 		return "yoil"; // //WEB-INF/views/yoil.jsp
 		
-
 	}
 
 		private boolean isVaild(Mydate date) {
 			return isVaild(date.getYear(), date.getMonth(), date.getDay());
 		}
-		private char getYoil(Mydate date) {
+		
+		private @ModelAttribute("yoil") char getYoil(Mydate date) {
 			return getYoil(date.getYear(), date.getMonth(), date.getDay());
 		}
 
