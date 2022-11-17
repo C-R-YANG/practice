@@ -10,15 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367d0e16-8dc0-42d2-9bdd-1e72ca247d31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ch3/src/main/java/com/fastcampus/ch3/aop/AopMain2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch3/src/main/java/com/fastcampus/ch3/aop/LoggingAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch3/src/main/java/com/fastcampus/ch3/aop/MyMath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch3/src/main/webapp/WEB-INF/spring/root-context_aop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch3/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch3/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch3/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch3/src/main/java/com/fastcampus/ch3/diCopy4/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch3/target/classes/com/fastcampus/ch3/diCopy4/AppContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch3/target/classes/com/fastcampus/ch3/diCopy4/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch3/target/classes/com/fastcampus/ch3/diCopy4/Door.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch3/target/classes/com/fastcampus/ch3/diCopy4/Engine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch3/target/classes/com/fastcampus/ch3/diCopy4/Main4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch3/target/classes/com/fastcampus/ch3/diCopy4/SportsCar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch3/target/classes/com/fastcampus/ch3/diCopy4/Truck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ch4-1.0.0-BUILD-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/ch4-1.0.0-BUILD-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +33,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -69,12 +75,21 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ToolWindowGit.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "C:/Users/초롱/IdeaProjects/ch4/src/main/java/com/fastcampus/ch4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "create.test.in.the.same.root": "true",
+    "last_directory_selection": "C:/Users/초롱/practice/ch4/src/test/resources",
+    "last_opened_file_path": "C:/Users/초롱/practice/ch4",
     "list.type.of.created.stylesheet": "CSS",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.38275862",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -82,9 +97,37 @@
       <recent name="com.fastcampus.ch4.domain" />
       <recent name="com.fastcampus.ch4.dao" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.fastcampus.ch4.dao" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.fastcampus.ch4.dao" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.fastcampus.ch4.dao" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BoardDaoImplTest.select">
+    <configuration name="BoardDaoImplTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ch4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fastcampus.ch4.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fastcampus.ch4.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.fastcampus.ch4.dao.BoardDaoImplTest" />
+      <option name="METHOD_NAME" value="select" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ch4:war exploded">
@@ -172,6 +215,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.BoardDaoImplTest.select" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BoardDaoImplTest.select" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -182,10 +234,22 @@
       <option name="presentableId" value="Default" />
       <updated>1668658982559</updated>
       <workItem from="1668658984274" duration="2475000" />
+      <workItem from="1668685156359" duration="4816000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
