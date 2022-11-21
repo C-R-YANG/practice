@@ -1097,12 +1097,13 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
     <column id="303" parent="300" name="bno">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="304" parent="300" name="title">
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
@@ -1121,19 +1122,19 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DefaultExpression>0</DefaultExpression>
       <Position>5</Position>
     </column>
-    <column id="308" parent="300" name="reg_date">
-      <DataType>datetime|0s</DataType>
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    <column id="308" parent="300" name="comment_cnt">
+      <DataType>int|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
       <Position>6</Position>
     </column>
-    <column id="309" parent="300" name="up_date">
+    <column id="309" parent="300" name="reg_date">
       <DataType>datetime|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <Position>7</Position>
     </column>
-    <column id="310" parent="300" name="comment_cnt">
-      <DataType>int|0s</DataType>
-      <DefaultExpression>0</DefaultExpression>
+    <column id="310" parent="300" name="up_date">
+      <DataType>datetime|0s</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <Position>8</Position>
     </column>
     <index id="311" parent="300" name="PRIMARY">
